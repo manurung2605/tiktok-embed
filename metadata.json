@@ -1,0 +1,6 @@
+{
+  "name": "TikTok Link Resolver Android App",
+  "description": "An Android-native mobile app & PWA for resolving short TikTok links, stripping tracking parameters, previewing embeds, and opening via Android Intents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

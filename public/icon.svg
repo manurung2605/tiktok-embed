@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#7b2cbf" />
+      <stop offset="100%" stop-color="#ff0050" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Android Squircle Background -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#bg)" stroke="url(#neon)" stroke-width="8" />
+  
+  <!-- Outer Glow circle -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#00f2fe" stroke-width="2" opacity="0.3" filter="url(#glow)" />
+  
+  <!-- TikTok note with cyan and magenta offset layers -->
+  <!-- Magenta shadow -->
+  <path d="M296 140 C310 170 335 195 372 200 L372 245 C345 244 322 233 306 218 L306 316 C306 372 262 414 204 414 C150 414 108 372 108 318 C108 264 152 222 208 222 C214 222 220 223 226 224 L226 269 C220 267 214 266 208 266 C179 266 156 289 156 318 C156 346 178 368 206 368 C238 368 259 342 259 310 L259 140 Z" fill="#ff0050" opacity="0.8" transform="translate(6, 6)" />
+  <!-- Cyan shadow -->
+  <path d="M296 140 C310 170 335 195 372 200 L372 245 C345 244 322 233 306 218 L306 316 C306 372 262 414 204 414 C150 414 108 372 108 318 C108 264 152 222 208 222 C214 222 220 223 226 224 L226 269 C220 267 214 266 208 266 C179 266 156 289 156 318 C156 346 178 368 206 368 C238 368 259 342 259 310 L259 140 Z" fill="#00f2fe" opacity="0.9" transform="translate(-6, -6)" />
+  <!-- Main white TikTok note -->
+  <path d="M296 140 C310 170 335 195 372 200 L372 245 C345 244 322 233 306 218 L306 316 C306 372 262 414 204 414 C150 414 108 372 108 318 C108 264 152 222 208 222 C214 222 220 223 226 224 L226 269 C220 267 214 266 208 266 C179 266 156 289 156 318 C156 346 178 368 206 368 C238 368 259 342 259 310 L259 140 Z" fill="#ffffff" />
+  
+  <!-- Android Link Resolver Badge in bottom right -->
+  <g transform="translate(320, 320)">
+    <circle cx="56" cy="56" r="50" fill="#10b981" stroke="#0b0f17" stroke-width="6" />
+    <!-- Android bot antenna & head / link chain -->
+    <path d="M38 56 C38 46 46 38 56 38 C66 38 74 46 74 56 Z" fill="#ffffff" />
+    <circle cx="48" cy="50" r="3" fill="#10b981" />
+    <circle cx="64" cy="50" r="3" fill="#10b981" />
+    <line x1="44" y1="36" x2="40" y2="30" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="68" y1="36" x2="72" y2="30" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <!-- Link badge -->
+    <path d="M42 68 L70 68" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <path d="M48 76 L64 76" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>
